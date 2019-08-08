@@ -1,0 +1,6 @@
+framework module StartTips {
+  umbrella header "StartTips.h"
+
+  export *
+  module * { export * }
+}
