@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAA68CB2320A56100AC77E7 /* libStartTipsStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAA68C82320A56100AC77E7 /* libStartTipsStatic.a */; };
+		5AAA68CC2320A56100AC77E7 /* StartTips.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AAA68C92320A56100AC77E7 /* StartTips.bundle */; };
 		5AE7881822FB9E6700075EDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7881722FB9E6700075EDB /* AppDelegate.m */; };
 		5AE7881B22FB9E6700075EDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7881A22FB9E6700075EDB /* ViewController.m */; };
 		5AE7881E22FB9E6700075EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7881C22FB9E6700075EDB /* Main.storyboard */; };
 		5AE7882022FB9E6800075EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7881F22FB9E6800075EDB /* Assets.xcassets */; };
 		5AE7882322FB9E6800075EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7882122FB9E6800075EDB /* LaunchScreen.storyboard */; };
 		5AE7882622FB9E6800075EDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE7882522FB9E6800075EDB /* main.m */; };
-		5AE7882E22FB9F4700075EDB /* StartTips.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE7882C22FB9ECE00075EDB /* StartTips.framework */; };
-		5AE7882F22FB9F4700075EDB /* StartTips.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE7882C22FB9ECE00075EDB /* StartTips.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5AE7883222FBA1DC00075EDB /* StartTips.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AE7883122FBA1DC00075EDB /* StartTips.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5AE7882F22FB9F4700075EDB /* StartTips.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +31,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5AAA68AE2320989F00AC77E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5AAA68C82320A56100AC77E7 /* libStartTipsStatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStartTipsStatic.a; path = StartTips/libStartTipsStatic.a; sourceTree = SOURCE_ROOT; };
+		5AAA68C92320A56100AC77E7 /* StartTips.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = StartTips.bundle; path = StartTips/StartTips.bundle; sourceTree = SOURCE_ROOT; };
+		5AAA68CA2320A56100AC77E7 /* StartTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartTipsViewController.h; path = StartTips/StartTipsViewController.h; sourceTree = SOURCE_ROOT; };
 		5AE7881322FB9E6700075EDB /* DemoStartTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoStartTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE7881622FB9E6700075EDB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5AE7881722FB9E6700075EDB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,8 +45,6 @@
 		5AE7882222FB9E6800075EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AE7882422FB9E6800075EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AE7882522FB9E6800075EDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5AE7882C22FB9ECE00075EDB /* StartTips.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartTips.framework; sourceTree = SOURCE_ROOT; };
-		5AE7883122FBA1DC00075EDB /* StartTips.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartTips.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,16 +52,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AE7882E22FB9F4700075EDB /* StartTips.framework in Frameworks */,
+				5AAA68CB2320A56100AC77E7 /* libStartTipsStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AAA68C72320A55600AC77E7 /* StartTips */ = {
+			isa = PBXGroup;
+			children = (
+				5AAA68C82320A56100AC77E7 /* libStartTipsStatic.a */,
+				5AAA68C92320A56100AC77E7 /* StartTips.bundle */,
+				5AAA68CA2320A56100AC77E7 /* StartTipsViewController.h */,
+			);
+			path = StartTips;
+			sourceTree = "<group>";
+		};
 		5AE7880A22FB9E6700075EDB = {
 			isa = PBXGroup;
 			children = (
+				5AAA68AE2320989F00AC77E7 /* README.md */,
 				5AE7881522FB9E6700075EDB /* DemoStartTips */,
 				5AE7881422FB9E6700075EDB /* Products */,
 			);
@@ -82,8 +93,7 @@
 				5AE7881722FB9E6700075EDB /* AppDelegate.m */,
 				5AE7881922FB9E6700075EDB /* ViewController.h */,
 				5AE7881A22FB9E6700075EDB /* ViewController.m */,
-				5AE7883122FBA1DC00075EDB /* StartTips.bundle */,
-				5AE7882C22FB9ECE00075EDB /* StartTips.framework */,
+				5AAA68C72320A55600AC77E7 /* StartTips */,
 				5AE7881C22FB9E6700075EDB /* Main.storyboard */,
 				5AE7881F22FB9E6800075EDB /* Assets.xcassets */,
 				5AE7882122FB9E6800075EDB /* LaunchScreen.storyboard */,
@@ -153,7 +163,7 @@
 			files = (
 				5AE7882322FB9E6800075EDB /* LaunchScreen.storyboard in Resources */,
 				5AE7882022FB9E6800075EDB /* Assets.xcassets in Resources */,
-				5AE7883222FBA1DC00075EDB /* StartTips.bundle in Resources */,
+				5AAA68CC2320A56100AC77E7 /* StartTips.bundle in Resources */,
 				5AE7881E22FB9E6700075EDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +331,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/StartTips",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.DemoStartTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +357,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/StartTips",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingjie.DemoStartTips;
 				PRODUCT_NAME = "$(TARGET_NAME)";

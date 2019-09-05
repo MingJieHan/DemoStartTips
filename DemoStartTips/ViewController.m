@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <StartTips/StartTips.h>
+#import "StartTipsViewController.h"
 
 @interface ViewController ()
 
